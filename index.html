@@ -1,42 +1,259 @@
 <!DOCTYPE html>
-<html lang="pt_BR">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário</title>
+    <title>Receitas da Vovó</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="sitevovo.css">
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/menu.css' rel='stylesheet'>
+
 </head>
 
 <body>
-    <form action="config.php" method="post">
-
-        <div class="formulario">
-            <label for="nome">Nome:</label>
-            <br>
-            <input type="text" name="nome" placeholder="Digite seu nome" id="nome" class="input" required>
-            <br>
-
-            <label for="cpf">CPF:</label>
-            <br>
-            <input type="text" name="cpf" placeholder="Digite seu CPF" id="cpf" class="input" required>
-            <br>
-
-            <label for="cpf">Senha:</label>
-            <br>
-            <input type="password" name="senha" placeholder="Digite sua senha" id="senha" class="input" required>
-
-            <br>
-            <label for="cpf">Repita sua senha:</label>
-            <br>
-            <input type="password" name="check-senha" placeholder="Repita sua senha" id="check_senha" class="input"
-                required>
-                <br>
-                <br>
-            <button class="btn" type="submit" name="cadastrar" id="cadastrar">Cadastrar</button>
+    <header>
+        <!--Nav bar-->
+        <div class="nav-bar">
+            <nav>
+                <a href="#" class="logo"><img src="./logo.png" alt="">
+                    <h3>Receitas da Vovó</h3>
+                </a>
+                <input type="checkbox" name="" id="toggle">
+                <label for="toggle"><i class="gg-menu"></i></label>
+                <div class="menu">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Sobre</a></li>
+                        <li><a href="#">Contato</a></li>
+                        <li><a href="#">Serviços</a></li>
+                    </ul>
+                </div>
+            </nav>
         </div>
 
-    </form>
+    </header>
+    <!--Página inicial-->
+    <section class="section">
+        <div class="conteudo-principal">
+
+            <h1>Deixe seu dia mais saboroso!</h1>
+            <h2>As melhores receitas!</h2>
+            <div class="btn">
+                <button class="reservar">Reservar</button>
+                <button class="reservar">Faça seu pedido</button>
+            </div>
+        </div>
+    </section>
+    <section>
+        <!--cards-->
+        <div class="cards">
+            <!--card 1-->
+            <div class="card">
+                <div class="imagem"><img class="bolo" src="./bolo de cenoura.jpg" alt="bolo.png">
+                </div>
+                <div class="texto">
+                    <h2 class="text-main">Bolo de Cenoura</h2>
+                    <br>
+                    <p class="desk">Delicioso bolo de cenoura caseiro.
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                    <h3>R$14.99</h3>
+                    </p><br>
+                </div>
+                <div class="btn2">
+                    <button type="button" class="bcard">Comprar</button>
+                </div>
+
+            </div>
+
+            <!--card 2-->
+            <div class="card">
+                <div class="imagem"><img class="bolo" src="./escondidinho.jpg" alt="bolo.png">
+                </div>
+                <div class="texto">
+                    <h2 class="text-main">Escondidinho de Mandioca</h2>
+                    <br>
+                    <p class="desk">Escondidinho de carne feito com coxão<br> duro, purê de batata e mandioquinha,
+                        com<br> caldo Sabor Carne.</p><br>
+                    <br>
+                    <h3>R$23.50</h3>
+                    <br>
+                </div>
+                <div class="btn2">
+                    <button type="button" class="bcard">Comprar</button>
+                </div>
+
+            </div>
+            <!--card 3-->
+            <div class="card">
+                <div class="imagem"><img class="bolo" src="./feijoada.jpg" alt="bolo.png">
+                </div>
+                <div class="texto">
+                    <h2 class="text-main">Feijoada Tradiconal</h2>
+                    <br>
+                    <p class="desk">Uma feijoada completa, digna de restaurante, mas feita em casa, com os pertences que
+                        você preferir!</p><br>
+                    <br>
+                    <h3>R$55.00</h3>
+                    <br>
+                </div>
+                <div class="btn2">
+                    <button type="button" class="bcard">Comprar</button>
+                </div>
+
+            </div>
+            <!--card 4-->
+            <div class="card">
+                <div class="imagem"><img class="bolo" src="./arrozcarreteiro.jpg" alt="bolo.png">
+                </div>
+                <div class="texto">
+                    <h2 class="text-main">Arroz Carreteiro</h2>
+                    <br>
+                    <p class="desk">Arroz Branco, Carne Seca, Calabresa Defumada, Tomate, Cebola, Cheiro Verde e
+                        Temperos. Que tal incrementar seu lanche?</p><br>
+                    <br>
+                    <h3>R$49.99</h3>
+                    <br>
+                </div>
+                <div class="btn2">
+                    <button type="button" class="bcard">Comprar</button>
+                </div>
+            </div>
+        </div>
+        <!--cards 2 linha-->
+        <div class="cards">
+            <!--card 5-->
+            <div class="card">
+                <div class="imagem"><img class="bolo" src="./yakisoba.jpg" alt="bolo.png">
+                </div>
+                <div class="texto">
+                    <h2 class="text-main">Yakisoba</h2>
+                    <br>
+                    <p class="desk">Prato típico japonês, com o toque<BR> especial e brasileiro da vovó.</p><br>
+                    <br>
+                    <br>
+                    <h3>R$64.99</h3>
+                    <br>
+                </div>
+                <div class="btn2">
+                    <button type="button" class="bcard">Comprar</button>
+                </div>
+
+            </div>
+
+            <!--card 6-->
+            <div class="card">
+                <div class="imagem"><img class="bolo" src="./pave.jpg" alt="bolo.png">
+                </div>
+                <div class="texto">
+                    <h2 class="text-main">Pavê de Bolacha</h2>
+                    <br>
+                    <p class="desk">A base do pavê é feita com biscoitos do tipo champanhe ou maizena, ou até mesmo
+                        massa de bolo, que podem ser embebidas em licores ou chocolate derretido.<br>
+                        <br>
+                    <h3>R$34.99</h3>
+                    <br>
+                </div>
+                <div class="btn2">
+                    <button type="button" class="bcard">Comprar</button>
+                </div>
+
+            </div>
+            <!--card 7-->
+            <div class="card">
+                <div class="imagem"><img class="bolo" src="./Batatarecheada.jpg" alt="bolo.png">
+                </div>
+                <div class="texto">
+                    <h2 class="text-main">Batata Recheada</h2>
+                    <br>
+                    <p class="desk">Pode ser servido com recheios, coberturas ou condimentos como manteiga, queijo,
+                        creme de leite, molho, feijão cozido e até carne moída ou carne enlatada.
+                        <br>
+                        <br>
+                    <h3>R$28.50</h3>
+                    <br>
+                </div>
+                <div class="btn2">
+                    <button type="button" class="bcard">Comprar</button>
+                </div>
+
+            </div>
+            <!--card 8-->
+            <div class="card">
+                <div class="imagem"><img class="bolo" src="./estrogonofe.jpg" alt="bolo.png">
+                </div>
+                <div class="texto">
+                    <h2 class="text-main">Estrogonofe de Carne</h2>
+                    <br>
+                    <p class="desk">Receita muito popular brasileira, com o toque da vovó se torna a melhor escolha para
+                        os almoços de domingo!!!</p><br>
+                    <br>
+                    <h3>R$18.00</h3>
+                    <br>
+                </div>
+                <div class="btn2">
+                    <button type="button" class="bcard">Comprar</button>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="btn3">
+            <a href="pag_cad_user.php" class="bmais">Cadastre-se</a>
+        </div>
+
+
+    </section>
+    <!--Rodapé-->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Compania</h4>
+                    <ul>
+                        <li><a href="#">Sobre nós</a></li>
+                        <li><a href="#">Outros Serviços</a></li>
+                        <li><a href="#">Políticas de privacidade</a></li>
+                        <li><a href="#">Afiliados</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Fale Conosco</h4>
+                    <ul>
+                        <li><a href="#">FAC</a></li>
+                        <li><a href="#">Shopping</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Opçoes de pagamento</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Sociais</h4>
+                    <ul>
+                        <li><a href="#">Assista</a></li>
+                        <li><a href="#">bag</a></li>
+                        <li><a href="#">shoes</a></li>
+                        <li><a href="#">dress</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <h3 class="direitos">Copyright © 2023 de José Victor Garcia<br>Todos os direitos reservados.</h3>
+                </div>
+            </div>
+        </div>
+
+    </footer>
 
 </body>
 
